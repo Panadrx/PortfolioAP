@@ -1,0 +1,18 @@
+.home{
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.home .home-content .h-h3{
+  font-size: 27px;
+}
+
+.home .home-content .h-h1{
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.home .home-content .h-h2{
+  font-size: 40px;
+}

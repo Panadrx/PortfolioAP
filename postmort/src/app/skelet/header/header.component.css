@@ -1,0 +1,27 @@
+.header{
+  position: fixed;
+  width: 100%;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.header .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 100px;
+}
+
+.header .nav-link li{
+  list-style: none;
+  display: inline-block;
+}
+
+.header .nav-link li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}

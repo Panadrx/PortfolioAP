@@ -1,3 +1,19 @@
-.one{
+.home{
   background: url(/assets/fondo.jpg) no-repeat center;
+  font-family: 'Poppins' sans-serif;
 }
+
+.home-perfil{
+  border-radius: 10rem;
+  height: 300px;
+}
+
+.h{
+  justify-content: center;
+  align-items: center;
+}
+
+.social img{
+  height: 25px;
+}
+

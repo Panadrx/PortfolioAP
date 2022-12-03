@@ -1,14 +1,137 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;500&display=swap');
+
+/* Variables */
+:root {
+
+  --header-height: 3rem;
+
+  /* Colors*/
+
+  --first-color: #C8D1D3;
+  --title-color: #d97d54;
+  --text-color: #6E8CA0;
+  --input-color:#324755;
+  --body-color: #1B1C20;
+  --container-color: #FFFFFF;
+
+  /* Font */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .9rem;
+  --small-font-size: .8rem;
+  --smaller-font-size: .7rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+
+/* Font mobile */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .9rem;
+    --smaller-font-size: .8rem;
+  }
+}
+
+/* Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  /* color: #fff; */
+  text-decoration: none;
 }
 
-section {
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 var(--header-height);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Reusable */
+
+.section {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem 0 4rem;
 }
 
+.section__tittle {
+  font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 3rem;
+}
+
+.section__tittle,
+.section__subtitle{
+  text-align: center;
+}
+
+
+/* .h1 {
+  font-size: 64px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.h3 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* .frame {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+} */

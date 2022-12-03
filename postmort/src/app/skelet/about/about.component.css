@@ -1,3 +1,11 @@
-.two{
+.about{
   background: #191919;
+  font-family: 'Poppins', sans-serif;
 }
+
+.about-img {
+  width: 300px;
+  justify-self: center;
+  align-self: center;
+}
+
